@@ -9,6 +9,8 @@ export class FooterComponent implements OnInit {
 
   constructor() { }
 
+  title = "CodeLabs Restaurants"
+
   ngOnInit(): void {
   }
 
