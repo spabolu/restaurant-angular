@@ -6,11 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
-  title="(Your title here)"
+  title="CodeLabs Restaurant"
 
   constructor() { }
-
-  title = "CodeLabs Restaurants"
 
   ngOnInit(): void {
   }

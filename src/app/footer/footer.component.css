@@ -1,3 +1,15 @@
-ul {
-    list-style: none;
+.footer-copyright {
+    background-color: rgb(23, 112, 110);
+}
+
+.container-fluid {
+    background-color: rgb(55,215,210);
+}
+
+* {
+    color: aliceblue;
+}
+
+.padding-ten {
+    padding: 10px;
 }
