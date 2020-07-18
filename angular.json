@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Labs-Restaurant-Angular"
+    }
+  },
+  "defaultProject": "Labs-Restaurant-Angular",
+  "cli": {
+    "analytics": "c0afcc8b-f627-4d68-8f3e-11527509c788"
+  }
 }
