@@ -1,0 +1,21 @@
+.container-fluid
+{
+    background-color: orange;
+    color: rgb(255, 255, 255);
+}
+
+.btn
+{
+    background-color: rgb(60, 150, 230);
+    color: rgb(255,255,255);
+}
+
+.paddingX
+{
+    padding:5px;
+}
+
+.margin-right
+{
+    margin: 10px;
+}
