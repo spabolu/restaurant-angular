@@ -9,14 +9,13 @@ export class LocationsComponent implements OnInit {
 
   times: number = 0;
   pageNumber = 1;
-  
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  incrementPage()
-  {
+  incrementPage() {
     this.pageNumber++;
     console.log(this.pageNumber);
 
