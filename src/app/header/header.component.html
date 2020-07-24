@@ -1,10 +1,10 @@
-<header class = "page-header font-large orange pt-3"> 
+<header class = "page-header font-large orange"> 
 
     <div class = "container-fluid text-left">
 
-        <div class = "row mt-md-0 mt-3 paddingX">
+        <div class = "row margin-left paddingX">
 
-        <h1 routerLink = "landing">{{restaurant}}</h1>
+        <h1 routerLink = "landing">{{environment.title}}</h1>
         
         <!--old standard HTML code used before bootstrap button to add more polish-->
           <!-- <h3 class = "text-uppercase font weight-bold"><a href = "">menu</a></h3>
@@ -20,7 +20,7 @@
           
           <!--LINK BUTTONS: BOOTSTRAP-->
             <a class="btn btn-primary text-uppercase font-weight-bolder paddingX margin-right" href="" role="button">menu</a>
-            <a class="btn btn-primary text-uppercase font-weight-bolder paddingX margin-right" href="" role="button">locations</a>
+            <a class="btn btn-primary text-uppercase font-weight-bolder paddingX margin-right" routerLink = "locations" role="button">locations</a>
             <a class="btn btn-primary text-uppercase font-weight-bolder paddingX margin-right" routerLink = "reservations" role="button">reservations</a>
             <a class="btn btn-primary text-uppercase font-weight-bolder paddingX margin-right" href="" role="button">checkout</a>
             <a class="btn btn-primary text-uppercase font-weight-bolder paddingX margin-right" href="" role="button">about</a>
