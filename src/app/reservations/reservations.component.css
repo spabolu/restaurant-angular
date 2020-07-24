@@ -1,9 +1,31 @@
 .container-fluid
 {
     background-color: rgb(125, 241, 125);
-    color: rgb(255, 255, 255)
+    color: rgb(255, 255, 255);
+    font-weight: 50;
 } 
+
+.container-fluid-2
+{
+    background-color: rgb(55,215,210);
+    color: rgb(0, 0, 0);
+}
+.margin-left
+{
+    margin: 2px;
+}
+
 .paddingX
 {
- padding: 5px;
+ padding: 2.5px;
+}
+
+.paddingX2
+{ 
+  padding: 5px;
+}
+
+.row
+{
+    text-transform: uppercase;
 }
