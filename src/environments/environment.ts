@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  title : "CodeLabs Restaurant"
+  title: "CodeLabs Restaurant"
 };
 
 /*
