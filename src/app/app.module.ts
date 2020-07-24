@@ -7,6 +7,9 @@ import { FooterComponent } from './footer/footer.component';
 import { LandingComponent } from './landing/landing.component';
 import { HeaderComponent } from './header/header.component';
 import { ReservationsComponent } from './reservations/reservations.component';
+import { LocationsComponent } from './locations/locations.component';
+import { Page1Component } from './locations/page1/page1.component';
+import { Page2Component } from './locations/page2/page2.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { ReservationsComponent } from './reservations/reservations.component';
     FooterComponent,
     LandingComponent,
     HeaderComponent,
-    ReservationsComponent
+    ReservationsComponent,
+    LocationsComponent,
+    Page1Component,
+    Page2Component
   ],
   imports: [
     BrowserModule,
