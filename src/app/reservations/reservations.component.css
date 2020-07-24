@@ -2,17 +2,33 @@
 {
     background-color: rgb(83, 235, 83);
     color: rgb(255, 255, 255);
-    font-weight: 50;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2.5px black;
 } 
 
 .container-fluid-2
 {
     background-color: rgb(55,215,210);
     color: rgb(0, 0, 0);
+    min-width: 100vw;
+    min-height: 100vh;
 }
+
+.description
+{
+   text-transform: uppercase;
+}
+
+/*
 .margin-left
 {
-    margin: 2px;
+    margin-left: 7.5px;
+}
+*/
+
+.margin-top
+{
+    margin: 1px;
 }
 
 .paddingX
@@ -21,11 +37,7 @@
 }
 
 .paddingX2
-{ 
-  padding: 5px;
+{
+ padding: 150px;
 }
 
-.row
-{
-    text-transform: uppercase;
-}

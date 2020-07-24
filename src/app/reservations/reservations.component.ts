@@ -6,10 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./reservations.component.css']
 })
 export class ReservationsComponent implements OnInit {
+  timeCounter: number = 0;
+  pageNum = 1;
 
-  constructor() { }
+  constructor() {}
   reservationTitle = "Reservations";
-  ngOnInit(): void {
+
+  ngOnInit(): void 
+  {}
+
+  pageIncrementer()
+  {
+    this.pageNum++;
+    console.log(this.pageNum);
   }
 
 }

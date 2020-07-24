@@ -1,38 +1,58 @@
-<!--<reservations-->
+<div *ngIf = "pageNum ==1">
+<!--<reservations (page 1)-->
 
-<div class = "container-fluid text-center">
+<div class = "container-fluid text-center paddingX">
 <!--reservation title-->
 <!--md for desktop formatting, mt for margin top-->
-<div class = "row paddingX">
-    <h2>{{reservationTitle}}</h2>
-</div>
+    <h1>{{reservationTitle}}</h1>
 <!--reservation title-->
 </div>
 
-<div class = "container-fluid-2 text-left">
-<div class = "row margin-left paddingX2">
-    <p>make a reservation with the form below! enter your name, location, and time:</p>
-</div>
+<div class = "container-fluid-2 text-left paddingX2">
+  
+<div class = "description paddingX">
+  <h4>make a reservation with the form below! enter your name, location, and time:</h4>
 </div>
 
 <!--FORM FOR RESERVATIONS-->
 <form>
+
     <div class="form-row align-items-center">
       <div class="col-auto">
         <input type="text" class="form-control" placeholder="Name">
+    </div>
+
+      <div class="form-group col-auto margin-top">
+        <select class="form-control" id="locationForm">
+          <option selected>Location</option>
+          <option>Los Angeles</option>
+          <option>New York</option>
+          <option>Atlanta</option>
+          <option>Phoenix</option>
+          <option>Seattle</option>
+        </select>
       </div>
-      <div class="col-auto">
-        <input type="text" class="form-control" placeholder="Location">
-      </div>
+
       <div class="col-auto">
         <input type="text" class="form-control" placeholder="Time">
       </div>
-      <div class="col-auto">
-        <button type="submit" class="btn btn-primary mb-2">Submit</button>
-      </div>
-    </div>
-  </form>
-<!--FORM FOR RESERVATIONS-->
 
-<!--reservations-->
+      <div class="col-auto">
+        <!--page incrementer function with submit button to take to next page-->
+        <button type="submit" class="btn btn-primary" (click)= "pageIncrementer()">Submit</button>
+      </div>
+
+    </div>
+
+  </form>
+</div>
+<!--FORM FOR RESERVATIONS-->
+<!--reservations (page 1)-->
+</div>
+
+<div *ngIf= "pageNum==2">
+  <app-second-page></app-second-page>
+</div>
+
+
 
