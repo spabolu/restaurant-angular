@@ -4,12 +4,14 @@
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     text-shadow: 1px 1px 2.5px black;
+    margin-top: 1px;
 } 
 
 .container-fluid-2
 {
-    background-color: rgb(55,215,210);
-    color: rgb(0, 0, 0);
+    background-color: rgb(23, 112, 110);
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px black;
     min-width: 100vw;
     min-height: 100vh;
 }
@@ -19,25 +21,15 @@
    text-transform: uppercase;
 }
 
-/*
-.margin-left
-{
-    margin-left: 7.5px;
-}
+/* 
+  margin to align locations button
 */
-
 .margin-top
 {
     margin: 1px;
 }
-
-.paddingX
-{
- padding: 2.5px;
-}
-
 .paddingX2
 {
- padding: 150px;
+ padding: 40vh;
 }
 
