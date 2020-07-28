@@ -1,0 +1,8 @@
+.container-fluid
+{
+    background-color: white;
+    color: rgb(83, 235, 83);
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2.5px black;
+    margin-top: 1px;
+}
