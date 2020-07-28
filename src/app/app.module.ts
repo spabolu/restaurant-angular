@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { LandingComponent } from './landing/landing.component';
 import { HeaderComponent } from './header/header.component';
+import { MenuComponent } from './menu/menu.component';
+import { AboutComponent } from './about/about.component';
 import { ReservationsComponent } from './reservations/reservations.component';
 import { LocationsComponent } from './locations/locations.component';
 import { Page1Component } from './locations/page1/page1.component';
@@ -16,6 +18,9 @@ import { SecondPageComponent } from './reservations/second-page/second-page.comp
   declarations: [
     AppComponent,
     FooterComponent,
+    HeaderComponent,
+    MenuComponent,
+    AboutComponent,
     LandingComponent,
     HeaderComponent,
     ReservationsComponent,
