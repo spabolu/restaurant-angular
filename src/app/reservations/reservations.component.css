@@ -1,0 +1,35 @@
+.container-fluid
+{
+    background-color: rgb(83, 235, 83);
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2.5px black;
+    margin-top: 1px;
+} 
+
+.container-fluid-2
+{
+    background-color: rgb(23, 112, 110);
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px black;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.description
+{
+   text-transform: uppercase;
+}
+
+/* 
+  margin to align locations button
+*/
+.margin-top
+{
+    margin: 1px;
+}
+.paddingX2
+{
+ padding: 40vh;
+}
+
