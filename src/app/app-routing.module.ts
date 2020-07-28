@@ -8,7 +8,8 @@ import { LocationsComponent } from './locations/locations.component';
 const routes: Routes =
   [{ path: 'reservations', component: ReservationsComponent },
   { path: 'landing', component: LandingComponent },
-  { path: 'locations', component: LocationsComponent }];
+  { path: 'locations', component: LocationsComponent },
+  { path: '', redirectTo: '/landing', pathMatch: 'full'}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
