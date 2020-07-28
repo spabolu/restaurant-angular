@@ -1,0 +1,29 @@
+ .container{
+  background-color: whitesmoke;
+  
+ }
+  
+.heading{
+        text-align: center;
+      }
+    
+#about{
+    text-indent: 2em;
+    border: 5px double orange;
+    padding: 5px;
+    
+}
+
+#statement{
+  text-indent: 2em;
+  border: 5px double orange;
+  text-align: center;
+ 
+}
+
+.gif{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
