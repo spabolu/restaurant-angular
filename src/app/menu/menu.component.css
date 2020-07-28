@@ -1,4 +1,4 @@
-.center{
+/*.center{
     display: flex;
     justify-content: center;
 }
@@ -8,8 +8,21 @@
   }
   
   /* Clear floats after the columns */
-  .row:after {
+  /*.row:after {
     content: "";
     display: table;
     clear: both;
+  }*/
+  #title{
+    text-align: center;
+    font-family: "Open Sans";
+    font-weight: bold; 
+    font-size:50px;
+   
+
+  }
+  .title{
+    text-align:center;
+    text-decoration: underline;
+
   }
