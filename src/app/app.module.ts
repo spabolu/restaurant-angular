@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { AgmCoreModule } from '@agm/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,8 +11,6 @@ import { MenuComponent } from './menu/menu.component';
 import { AboutComponent } from './about/about.component';
 import { ReservationsComponent } from './reservations/reservations.component';
 import { LocationsComponent } from './locations/locations.component';
-import { Page1Component } from './locations/page1/page1.component';
-import { Page2Component } from './locations/page2/page2.component';
 import { SecondPageComponent } from './reservations/second-page/second-page.component';
 
 @NgModule({
@@ -25,13 +24,14 @@ import { SecondPageComponent } from './reservations/second-page/second-page.comp
     HeaderComponent,
     ReservationsComponent,
     LocationsComponent,
-    Page1Component,
-    Page2Component,
     SecondPageComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyBQC3NyLvsbNKrFMUAJzGO86VytwNLx-PQ'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

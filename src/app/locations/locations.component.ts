@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+declare let L;
 
 @Component({
   selector: 'app-locations',
@@ -7,18 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LocationsComponent implements OnInit {
 
-  times: number = 0;
-  pageNumber = 1;
-
   constructor() { }
 
   ngOnInit(): void {
+
+    const map = L.map('map').setView([51.505, -0.09], 13);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+
+        L.marker([36.1716, -115.1525]).addTo(map)
+        .bindPopup('Las Vegas')
+        .openPopup();
+
   }
 
-  incrementPage() {
-    this.pageNumber++;
-    console.log(this.pageNumber);
-
-  }
-
+  lat = 51.678418;
+  lng = 7.809007;
 }
