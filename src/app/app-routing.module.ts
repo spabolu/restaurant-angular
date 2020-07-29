@@ -6,6 +6,7 @@ import { LandingComponent } from './landing/landing.component';
 import { LocationsComponent } from './locations/locations.component';
 import {AboutComponent} from './about/about.component';
 import {MenuComponent} from './menu/menu.component';
+import {CheckoutComponent} from './checkout/checkout.component';
 
 const routes: Routes =
   [{ path: 'reservations', component: ReservationsComponent },
@@ -13,7 +14,8 @@ const routes: Routes =
   { path: 'locations', component: LocationsComponent },
   { path: 'about', component: AboutComponent}, 
   { path: 'menu', component: MenuComponent},
-  { path: '', redirectTo: '/landing', pathMatch: 'full'}];
+  { path: '', redirectTo: '/landing', pathMatch: 'full'},
+  { path: 'checkout', component: CheckoutComponent}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
