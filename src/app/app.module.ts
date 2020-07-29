@@ -12,6 +12,7 @@ import { AboutComponent } from './about/about.component';
 import { ReservationsComponent } from './reservations/reservations.component';
 import { LocationsComponent } from './locations/locations.component';
 import { SecondPageComponent } from './reservations/second-page/second-page.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 @NgModule({
   declarations: [
