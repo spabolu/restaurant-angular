@@ -24,7 +24,4 @@ export class LocationsComponent implements OnInit {
         .openPopup();
 
   }
-
-  lat = 51.678418;
-  lng = 7.809007;
 }
