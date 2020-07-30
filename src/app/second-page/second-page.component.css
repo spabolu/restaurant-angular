@@ -1,9 +1,20 @@
 .container-fluid
 {
-    background-color: white;
-    color: rgb(83, 235, 83);
+    background-color: black;
+    color: white;
     text-transform: uppercase;
-    text-shadow: 1px 1px 2.5px black;
-    margin-top: 1px;
-    font-family: 'Open Sans';
+    text-shadow: 1px 1px 2.5px rgb(55,215,210);
+}
+
+.container-fluid-2
+{
+    background-color: bisque;
+    min-width: 100vw;
+    min-height: 100vh;
+    text-transform: uppercase;
+}
+
+.paddingBodyText
+{
+    padding: 40vh;
 }
