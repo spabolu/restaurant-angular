@@ -1,0 +1,13 @@
+<div class = "container-fluid text-center">
+    <h1>{{confirm}}</h1>
+</div>
+
+<h2>Here is your order information:</h2>
+
+<!--<a class="btn btn-primary text-uppercase font-weight-bolder" role="button" click = "pageIncrementer()">new reservation</a>-->
+<a class ="btn btn-primary text-uppercase" routerLink="landing" role="button">home</a>
+
+
+<div *ngIf = "pageNum==2">
+    <app-reservations-component-html></app-reservations-component-html>
+</div>
