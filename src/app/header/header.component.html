@@ -22,8 +22,9 @@
       <a class="btn btn-primary text-uppercase font-weight-bolder paddingX margin-right" routerLink = "menu" role="button">menu</a>
       <a class="btn btn-primary text-uppercase font-weight-bolder paddingX margin-right" routerLink="locations"
         role="button">locations</a>
+        <!--pageDecrementer for reservations-->
       <a class="btn btn-primary text-uppercase font-weight-bolder paddingX margin-right" routerLink="reservations"
-        role="button">reservations</a>
+        role="button" (click)="pageDecrementer()">reservations</a>
       <a class="btn btn-primary text-uppercase font-weight-bolder paddingX margin-right" routerLink = "checkout"
         role="button">checkout</a>
       <a class="btn btn-primary text-uppercase font-weight-bolder paddingX margin-right" routerLink = "about" role="button">about</a>
@@ -31,3 +32,8 @@
 
   </div>
 </header>
+
+<!--to navigate back to first page of reservations always w/ header click-->
+<div *ngIf= "pageNum==1">
+  <app-reservations></app-reservations>
+</div>

@@ -9,9 +9,18 @@ import { environment } from './../../environments/environment'
 
 export class HeaderComponent implements OnInit {
 
+  timeCounter: number = 0;
+  pageNum = 2;
+
   environment = environment
   constructor() { }
   ngOnInit(): void {
+  }
+
+  pageDecrementer()
+  {
+    this.pageNum--;
+    console.log(this.pageNum);
   }
 
 }
