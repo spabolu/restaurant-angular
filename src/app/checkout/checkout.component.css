@@ -3,4 +3,19 @@
     text-transform: uppercase;
     text-align: center;
     padding: 30vh;
+    max-width: 100vw;
+    max-height: 100vh;
+    background-color: whitesmoke;
+}
+
+.margin-right
+{
+    margin: 10px;
+}
+
+.btn-primary
+{
+    background-color: thistle;
+    outline-color: purple;
+    color: black;
 }
