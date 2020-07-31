@@ -25,7 +25,8 @@ import { CheckoutComponent } from './checkout/checkout.component';
     HeaderComponent,
     ReservationsComponent,
     LocationsComponent,
-    SecondPageComponent
+    SecondPageComponent, 
+    CheckoutComponent
   ],
   imports: [
     BrowserModule,
