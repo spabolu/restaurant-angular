@@ -17,17 +17,16 @@
   
   <!--FORM FOR RESERVATIONS-->
       <!--name field-->
-    <form>
     <div class="form-row clearfix">
       <div class="col-auto">
       <!-- <input type="text" class="form-control" placeholder="Name" id="fname"> --> 
-      <input ref-reservations type="text" class="form-control" placeholder="Name" required [(ngModel)]="name">
+      <input ref-reservations type="text" class="form-control" placeholder="Name" [(ngModel)]="name">
       </div>
     
     
       <!--location form-->
       <div class="form-group col-auto margin-top">
-        <select class="form-control" required [(ngModel)]="city">
+        <select class="form-control" [(ngModel)]="city">
           <option selected>Location</option>
           <option value="Los Angeles">Los Angeles</option>
           <option value="New York">New York</option>
@@ -44,17 +43,17 @@
    
 
       <div class="col-auto">
-        <input type="text" class="form-control" placeholder="Time" required [(ngModel)]="time">
+        <input type="text" class="form-control" placeholder="Time" [(ngModel)]="time">
       </div>
 
       <div class="col-auto">
         <!--page incrementer function with submit button to take to next page-->
         <!--if else, add || time == ' ' ?-->
-      <button type="submit" class="btn btn-primary" (click)="pageIncrementer($event)" [attr.disabled]="name== ''?'':null">Submit</button>
+      <button type="submit" class="btn btn-primary" (click)="pageIncrementer($event)" [attr.disabled]="name== ' ' ? ' ':null">Submit</button>
       </div>
 
     </div>
-  </form>
+  
       
       <div class = "container-fluid text-center extraThings">
         <h4>Hours:</h4>
