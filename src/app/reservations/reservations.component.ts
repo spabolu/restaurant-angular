@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-reservations',
@@ -8,6 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class ReservationsComponent implements OnInit {
   timeCounter: number = 0;
   pageNum = 1;
+  
+  name: any;
+  city: { target: { value: any; }; };
+  time: { target: { value: any; }; };
 
   constructor() {}
   reservationTitle = "Reservations";
@@ -15,10 +19,13 @@ export class ReservationsComponent implements OnInit {
   ngOnInit(): void 
   {}
 
-  pageIncrementer()
+  pageIncrementer(name, city, time)
   {
     this.pageNum++;
     console.log(this.pageNum);
+    console.log(name.target.value);
+    console.log(city.target.value);
+    console.log(time.target.value);
   }
 
 }
