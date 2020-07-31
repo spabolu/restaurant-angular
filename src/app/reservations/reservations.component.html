@@ -17,7 +17,7 @@
   
   <!--FORM FOR RESERVATIONS-->
       <!--name field-->
-    <form (ngSubmit)="onSubmit()" #myForm="ngForm">
+    <form>
     <div class="form-row clearfix">
       <div class="col-auto">
       <!-- <input type="text" class="form-control" placeholder="Name" id="fname"> --> 
@@ -50,7 +50,7 @@
       <div class="col-auto">
         <!--page incrementer function with submit button to take to next page-->
         <!--if else, add || time == ' ' ?-->
-      <button type="submit" class="btn btn-primary" (click)="pageIncrementer($event)" [attr.disabled] = "!myForm.form.valid">Submit</button>
+      <button type="submit" class="btn btn-primary" (click)="pageIncrementer($event)" [attr.disabled]="name== ''?'':null">Submit</button>
       </div>
 
     </div>
