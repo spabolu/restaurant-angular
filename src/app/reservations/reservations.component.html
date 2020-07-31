@@ -17,16 +17,17 @@
   
   <!--FORM FOR RESERVATIONS-->
       <!--name field-->
+    <form (ngSubmit)="onSubmit()" #myForm="ngForm">
     <div class="form-row clearfix">
       <div class="col-auto">
       <!-- <input type="text" class="form-control" placeholder="Name" id="fname"> --> 
-      <input type="text" class="form-control" placeholder="Name" [(ngModel)]="name" required>
+      <input ref-reservations type="text" class="form-control" placeholder="Name" required [(ngModel)]="name">
       </div>
     
     
       <!--location form-->
       <div class="form-group col-auto margin-top">
-        <select class="form-control" [(ngModel)]="city">
+        <select class="form-control" required [(ngModel)]="city">
           <option selected>Location</option>
           <option value="Los Angeles">Los Angeles</option>
           <option value="New York">New York</option>
@@ -39,17 +40,21 @@
         </select>
       <!--<div class = "invalid-feedback">Please choose one of the cities.</div>-->
       </div>
+    
    
 
       <div class="col-auto">
-        <input type="text" class="form-control" placeholder="Time" [(ngModel)]="time">
+        <input type="text" class="form-control" placeholder="Time" required [(ngModel)]="time">
       </div>
 
       <div class="col-auto">
         <!--page incrementer function with submit button to take to next page-->
         <!--if else, add || time == ' ' ?-->
-        <button type="submit" class="btn btn-primary" (click)="pageIncrementer($event)" [attr.disabled] = "name == '' ? '' : null ">Submit</button>
+      <button type="submit" class="btn btn-primary" (click)="pageIncrementer($event)" [attr.disabled] = "!myForm.form.valid">Submit</button>
       </div>
+
+    </div>
+  </form>
       
       <div class = "container-fluid text-center extraThings">
         <h4>Hours:</h4>
@@ -57,14 +62,12 @@
         <p>Sun: 11AM-9PM</p>
       </div>
     
-    </div>
+</div>
 
   
-  <!--END OF FORM FOR RESERVATIONS-->
+<!--END OF FORM FOR RESERVATIONS-->
 </div>
-
 <!--reservations (page 1) (div tag to go with ngIf for first page)-->
-</div>
 
 <div *ngIf= "pageNum==2">
   <app-second-page [name]="name" [time]="time" [city] = "city"></app-second-page>
