@@ -13,7 +13,7 @@
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 1px black;
     min-width: 100vw;
-    min-height: 100vh; 
+    min-height: 100vh;
 }
 
 .description
@@ -51,4 +51,11 @@
 {
     font-weight: lighter;
 }
+
+.form-row
+{
+    position: absolute;
+    margin-top: 25px;
+}
+
 
