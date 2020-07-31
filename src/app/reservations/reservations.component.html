@@ -1,46 +1,39 @@
-<div *ngIf = "pageNum ==1">
-<!--<reservations (page 1)-->
+<div *ngIf="pageNum ==1">
+  <!--<reservations (page 1)-->
 
-<div class = "container-fluid text-center">
-<!--reservation title-->
-<!--md for desktop formatting, mt for margin top-->
+  <div class="container-fluid text-center">
+    <!--reservation title-->
+    <!--md for desktop formatting, mt for margin top-->
     <h1>{{reservationTitle}}</h1>
-<!--reservation title-->
-</div>
-
-<div class = "container-fluid-2 paddingX2 text-center align-items-center">
-  
-  <div class = "description">
-    <h4>make a reservation with the form below!</h4>
+    <!--reservation title-->
   </div>
 
-  
-  <!--FORM FOR RESERVATIONS-->
-      <!--name field-->
+  <div class="container-fluid-2 paddingX2 text-center align-items-center">
+
+    <div class="description">
+      <h4>make a reservation with the form below!</h4>
+    </div>
+
+
+    <!--FORM FOR RESERVATIONS-->
+    <!--name field-->
     <div class="form-row clearfix">
       <div class="col-auto">
-      <!-- <input type="text" class="form-control" placeholder="Name" id="fname"> --> 
-      <input ref-reservations type="text" class="form-control" placeholder="Name" [(ngModel)]="name">
+        <!-- <input type="text" class="form-control" placeholder="Name" id="fname"> -->
+        <input ref-reservations type="text" class="form-control" placeholder="Name" [(ngModel)]="name">
       </div>
-    
-    
+
+
       <!--location form-->
       <div class="form-group col-auto margin-top">
         <select class="form-control" [(ngModel)]="city">
-          <option selected>Location</option>
-          <option value="Los Angeles">Los Angeles</option>
-          <option value="New York">New York</option>
-          <option value="Atlanta">Atlanta</option>
-          <option value="Phoenix">Phoenix</option>
-          <option value="Seattle">Seattle</option>
-          <option value="Washington">Washington</option>
-          <option value="Las Vegas">Las Vegas</option>
-          <option value="Dallas">Dallas</option>
+          <option value="placeholder" selected>Location</option>
+          <option *ngFor="let location of restaurant_locations" value="{{ location.name }}">{{ location.name }}</option>
         </select>
-      <!--<div class = "invalid-feedback">Please choose one of the cities.</div>-->
+        <!--<div class = "invalid-feedback">Please choose one of the cities.</div>-->
       </div>
-    
-   
+
+
 
       <div class="col-auto">
         <input type="text" class="form-control" placeholder="Time" [(ngModel)]="time">
@@ -49,27 +42,26 @@
       <div class="col-auto">
         <!--page incrementer function with submit button to take to next page-->
         <!--if else, add || time == ' ' ?-->
-      <button type="submit" class="btn btn-primary" (click)="pageIncrementer($event)" [attr.disabled]="name== ' ' ? ' ':null">Submit</button>
+        <button type="submit" class="btn btn-primary" (click)="pageIncrementer($event)"
+          [attr.disabled]="name== ' ' ? ' ':null">Submit</button>
       </div>
 
     </div>
-  
-      
-      <div class = "container-fluid text-center extraThings">
-        <h4>Hours:</h4>
-        <p>Mon-Sat: 10AM-10PM</p>
-        <p>Sun: 11AM-9PM</p>
-      </div>
-    
-</div>
 
-  
-<!--END OF FORM FOR RESERVATIONS-->
+
+    <div class="container-fluid text-center extraThings">
+      <h4>Hours:</h4>
+      <p>Mon-Sat: 10AM-10PM</p>
+      <p>Sun: 11AM-9PM</p>
+    </div>
+
+  </div>
+
+
+  <!--END OF FORM FOR RESERVATIONS-->
 </div>
 <!--reservations (page 1) (div tag to go with ngIf for first page)-->
 
-<div *ngIf= "pageNum==2">
-  <app-second-page [name]="name" [time]="time" [city] = "city"></app-second-page>
+<div *ngIf="pageNum==2">
+  <app-second-page [name]="name" [time]="time" [city]="city"></app-second-page>
 </div>
-
-

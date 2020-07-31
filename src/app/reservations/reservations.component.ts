@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { restaurant_locations } from 'src/app/locations/restaurant_locations.js'
 
 @Component({
   selector: 'app-reservations',
@@ -8,19 +9,19 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ReservationsComponent implements OnInit {
   timeCounter: number = 0;
   pageNum = 1;
-  
+
   name: any;
   city: { target: { value: any; }; };
   time: { target: { value: any; }; };
 
-  constructor() {}
+  constructor() { }
   reservationTitle = "Reservations";
 
-  ngOnInit(): void 
-  {}
+  restaurant_locations = restaurant_locations
 
-  pageIncrementer(name, city, time)
-  {
+  ngOnInit(): void { }
+
+  pageIncrementer(name, city, time) {
     this.pageNum++;
     console.log(this.pageNum);
     console.log(name.target.value);
