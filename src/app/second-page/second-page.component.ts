@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-second-page',
@@ -6,9 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./second-page.component.css']
 })
 export class SecondPageComponent implements OnInit {
-  timeCounter: number = 0;
-  pageNum = 1;
 
+  @Input() name;
+  @Input() time;
+  @Input() city;
+  
   confirm = "confirmation";
   
   constructor() { }
@@ -16,10 +18,6 @@ export class SecondPageComponent implements OnInit {
   ngOnInit(): void {}
 
 //for using the "new reservations" button to go back to page 1
-  pageIncrementer()
-  {
-    this.pageNum++;
-    console.log(this.pageNum);
-  }
+
 
 }

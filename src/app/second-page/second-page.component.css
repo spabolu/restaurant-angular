@@ -4,6 +4,7 @@
     color: white;
     text-transform: uppercase;
     text-shadow: 1px 1px 2.5px rgb(55,215,210);
+    margin-bottom: -7.75px;
 }
 
 .container-fluid-2
@@ -16,5 +17,13 @@
 
 .paddingBodyText
 {
-    padding: 40vh;
+    padding: 30vh;
+}
+
+.buttonDifferentiator
+{
+    padding: 15vh;
+    background-color: bisque;
+    text-shadow: 0.25px 0.25px 0.25px black;
+    margin-bottom: 0px;
 }
