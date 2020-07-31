@@ -23,5 +23,14 @@ export class LocationsComponent implements OnInit {
         .bindPopup('Las Vegas')
         .openPopup();
 
+        L.marker([38.8953,-77.1227]).addTo(map)
+        .bindPopup('Washington')
+        .openPopup();
+
+        L.marker([32.7754,-96.7999]).addTo(map)
+        .bindPopup('Dallas')
+        .openPopup();
+
+
   }
 }
