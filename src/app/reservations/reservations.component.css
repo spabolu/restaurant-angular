@@ -1,4 +1,3 @@
-
 .container-fluid
 {
     background-color: white;
@@ -14,11 +13,13 @@
     text-shadow: 1px 1px 1px black;
     min-width: 100vw;
     min-height: 100vh;
+    background-position: absolute;
 }
 
 .description
 {
    text-transform: uppercase;
+   background-position: absolute;
 }
 
 /* 
@@ -37,6 +38,8 @@
 {
     text-transform: uppercase;
     font-weight: lighter;
+    position: absolute;
+    background-position: absolute;
 }
 
 .extraThings 
@@ -50,6 +53,11 @@
 .btn-primary
 {
     font-weight: lighter;
+}
+
+.btn-primary:hover 
+{
+    border: 2px solid turquoise;
 }
 
 .form-row
