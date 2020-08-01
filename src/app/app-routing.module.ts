@@ -10,6 +10,9 @@ import { CheckoutComponent } from './checkout/checkout.component';
 
 const routes: Routes =
   [{ path: 'reservations', component: ReservationsComponent },
+  /*
+  to first be able to get to landingcomponent and have nothing show up, have to name the path as blank
+  */
   { path: '', component: LandingComponent },
   { path: 'locations', component: LocationsComponent },
   { path: 'about', component: AboutComponent },
