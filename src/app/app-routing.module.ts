@@ -10,7 +10,7 @@ import { CheckoutComponent } from './checkout/checkout.component';
 
 const routes: Routes =
   [{ path: 'reservations', component: ReservationsComponent },
-  { path: 'landing', component: LandingComponent },
+  { path: '', component: LandingComponent },
   { path: 'locations', component: LocationsComponent },
   { path: 'about', component: AboutComponent },
   { path: 'menu', component: MenuComponent },
